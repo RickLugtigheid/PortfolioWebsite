@@ -11,6 +11,7 @@
 
     <!-- Fontawesome css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css">
 
     <!-- Custom css -->
     <link rel="stylesheet" href="/assets/css/style.css">
@@ -19,7 +20,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-dark bg-night navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand img-fluid" href="/">
+            <a class="navbar-brand img-fluid" href="/" rel="local">
 
                 <img src="/assets/images/logo.svg" alt="Rlugt" class="navbar-brand-logo">
                 
@@ -27,41 +28,69 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
+            <!-- Links -->
             <div class="collapse navbar-collapse" id="navbarText">
-              <ul class="navbar-nav h4 mr-auto">
+              <ul class="navbar-nav h4 mr-auto col-11">
                 <li class="nav-item">
-                  <a class="nav-link" href="/portfolio">Portfolio</a>
+                  <a class="nav-link" href="/portfolio" rel="local">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/">
+                  <a class="nav-link" href="/about" rel="local">
                     <span lang="nl">Over</span>
                     <span lang="eng">About</span>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#" >Contact</a>
+                  <a class="nav-link active" aria-current="page" href="#" rel="local">Contact</a>
                 </li>
               </ul>
+              <!-- Language selector -->
+              <div id="language-selector" class="">
+            
+                <div class="dropdown nav-item">
+                    <a class="btn nav-link" id="Dropdown" style="height:50%" type="button" data-bs-toggle="dropdown">
+                        <i class="flag-icon flag-icon-gb-eng" lang="eng"></i>
+                        <i class="flag-icon flag-icon-nl" lang="nl"></i>
+                    </a>
+                
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="Dropdown">
+                        <li>
+                            <a class="dropdown-item" href="?lang=eng">
+                                <i class="flag-icon flag-icon-gb-eng"></i>
+                                <span lang="eng"> English <i class="fa fa-check text-success ms-2"></i></span>
+                                <span lang="nl"> Engels</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="?lang=nl"><i class="flag-icon flag-icon-nl"></i>
+                                <span lang="eng"> Dutch</span>
+                                <span lang="nl"> Nederlands <i class="fa fa-check text-success ms-2"></i></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+              </div>
             </div>
-          </div>
-
-          <div id="socials" class="align-content-end">
-            <!-- Section: Social media -->
-            <section class="navbar-nav h4 mr-auto">    
-              <!-- Linkedin -->
-              <a class="btn rounded-circle btn-floating m-1 nav-link" style="font-size: 1.125rem;" href="https://nl.linkedin.com/in/rick-lugtigheid-4742b0170s" role="button"><i class="fab fa-linkedin-in"></i></a>
-        
-              <!-- Github -->
-              <a class="btn rounded-circle btn-floating m-1 nav-link" style="font-size: 1.125rem;" href="https://github.com/RickLugtigheid" target="_blank" role="button"><i class="fab fa-github"></i></a>
-            </section>
           </div>
       </nav>
 
     <!-- Content -->
-    <main class="wrapper text-center justify-content-center">
+    <main class="wrapper justify-content-center">
 
+      <div class="row mb-5">
+        <h1 class="text-danger">Contact</h1>
+      </div>
 
+      <div class="row mb-3">
+        <h3 lang="eng">Lets talk...</h3>
+        <h3 lang="nl">Laten we praten...</h3>
+      </div>
 
+      <div class="row">
+        <p lang="eng">You can contact me via the following email address:</p>
+        <p lang="nl">U contact met mij opnemen via het volgende email address:</p>
+      </div>
+      
     </main>
 
     <!-- Imports -->
