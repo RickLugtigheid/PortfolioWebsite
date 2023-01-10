@@ -75,23 +75,43 @@
       </nav>
 
     <!-- Content -->
-    <main class="wrapper justify-content-center">
-
-      <div class="row mb-5">
-        <h1 class="text-danger">Contact</h1>
-      </div>
-
-      <div class="row mb-3">
-        <h3 lang="eng">Lets talk...</h3>
-        <h3 lang="nl">Laten we praten...</h3>
-      </div>
-
+    <main class="wrapper container-fluid">
+      
       <div class="row">
-        <p lang="eng">You can contact me via the following email address:</p>
-        <p lang="nl">U contact met mij opnemen via het volgende email address:</p>
+        <div class="col-6 text-center">
+          <h1 class="h2 text-danger mb-4">Contact</h1>
+          <a href="mailto:rlugtigheid77@gmail.com" class="text-light underline-hover">rlugtigheid77@gmail.com</a>
+        </div>
+        <div class="col-6 text-center">
+          <h1 class="h2 text-danger mb-4">Socials</h1>
+          <section>
+            <!-- Linkedin --> 
+            <a title="Linkedin" class="btn rounded-circle btn-floating text-light" style="font-size: 1.525rem;" href="https://www.linkedin.com/in/rick-lugtigheid-4742b0170/" target="_blank" role="button"><i class="fab fa-linkedin-in"></i></a> 
+            <!-- Github --> 
+            <a title="Github" class="btn rounded-circle btn-floating text-light" style="font-size: 1.525rem;" href="https://github.com/RickLugtigheid" target="_blank" role="button"><i class="fab fa-github"></i></a> 
+          </section> 
+        </div>
       </div>
       
     </main>
+
+    <!-- Footer -->
+    <footer class="container-fluid justify-content-between align-items-center py-3">
+      <div class="row">
+          <div class="col col-md-4 col-lg-6 d-flex align-items-center">
+              <!-- <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+              <img src="/assets/images/logo.svg" class="bi" width="30" height="24"></img>
+              </a> -->
+              <span class="mb-3 mb-md-0 text-muted">© 2023 Rick Lugtigheid</span>
+          </div>
+      
+          <ul class="col nav col-md-4 col-lg-5 justify-content-end list-unstyled d-flex">
+              <li class="ms-3"><a class="text-muted underline-hover" href="/contact">Contact</a></li>
+              <li class="ms-3"><a class="text-muted" href="#"><i class="bi fab fa-github" width="24" height="24"></i></a></li>
+              <li class="ms-3"><a class="text-muted" href="#"><i class="bi fab fa-linkedin-in" width="24" height="24"></i></a></li>
+          </ul>
+      </div>
+    </footer>
 
     <!-- Imports -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
