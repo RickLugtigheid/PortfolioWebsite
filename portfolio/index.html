@@ -16,7 +16,7 @@
     <!-- Custom css -->
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
-<body class="bg-night text-light">
+<body class="bg-night text-light w-100">
     <!-- Navbar -->
     <nav class="navbar navbar-dark bg-night navbar-expand-lg">
         <div class="container-fluid">
@@ -85,11 +85,11 @@
         <!-- Tag selectors -->
         <h3 class="mt-4 mb-2 h4">Tags:</h3>
         <div id="tag-selector-buttons">
-            <button id="btn-sort-all" class="btn btn-light">Show all</button>
+            <button id="btn-sort-all" class="btn btn-outline-light">Show all</button>
 
-            <button class="btn btn-light btn-sort" value="web">Web</button> 
-            <button class="btn btn-light btn-sort" value="c#">C#</button>
-            <button class="btn btn-light btn-sort" value="js">JavaScript</button> 
+            <button class="btn btn-outline-light btn-sort" value="web">Web</button> 
+            <button class="btn btn-outline-light btn-sort" value="c#">C#</button>
+            <button class="btn btn-outline-light btn-sort" value="js">JavaScript</button> 
         </div>
 
         <!-- Projects -->
@@ -98,8 +98,25 @@
 
             </ul>
         </div>
-
     </main>
+
+    <!-- Footer -->
+    <footer class="container-fluid bg-night justify-content-between align-items-center mt-auto py-3 fixed-bottom">
+        <div class="row">
+            <div class="col col-md-4 col-lg-6 d-flex align-items-center">
+                <!-- <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                <img src="/assets/images/logo.svg" class="bi" width="30" height="24"></img>
+                </a> -->
+                <span class="mb-3 mb-md-0 text-muted">© 2023 Rick Lugtigheid</span>
+            </div>
+        
+            <ul class="col nav col-md-4 col-lg-5 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-muted underline-hover" href="/contact">Contact</a></li>
+                <li class="ms-3"><a class="text-muted" href="https://github.com/RickLugtigheid" target="_blank"><i class="bi fab fa-github" width="24" height="24"></i></a></li>
+                <li class="ms-3"><a class="text-muted" href="https://www.linkedin.com/in/rick-lugtigheid-4742b0170/" target="_blank"><i class="bi fab fa-linkedin-in" width="24" height="24"></i></a></li>
+            </ul>
+        </div>
+    </footer>
 
     <!-- Imports -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>

@@ -13,7 +13,7 @@ function localize(language)
         let show = '[lang]' + lang;
         document.querySelectorAll(show).forEach(node => 
         {
-            node.style.display = 'block';
+            node.style.display = node.tagName == 'P' ? 'inline' : 'block';
         });
     }
     else

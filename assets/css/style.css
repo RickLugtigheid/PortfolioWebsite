@@ -1,8 +1,12 @@
 .bg-night {
     background-color: rgb(33, 33, 33);
 }
-nav {
+nav, footer {
     box-shadow: 0 1px 4px 0 rgb(0 0 0 / 20%);
+}
+footer {
+    width: 100%;
+    font-size: 1.5vh;
 }
 .navbar-brand-logo {
     width: 110%;
@@ -11,7 +15,7 @@ nav {
 .wrapper {
     max-width: 1010px;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 65px;
 }
 ul {
     display: block;
@@ -26,6 +30,13 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
+}
+
+.underline-hover:hover {
+    text-decoration: underline;
+}
+.underline-hover {
+    text-decoration: none;
 }
 
 /* Cards */
@@ -52,16 +63,10 @@ footer {
     margin-top: 2.4em;
     width: 45%;
 }
-#socials {
-    display:none
-}
 @media (min-width: 821px) {
     .form-control {
         width: 500px !important;
         height: 50px;
-    }
-    #socials {
-        display:unset
     }
 }
 .bg-blue {
