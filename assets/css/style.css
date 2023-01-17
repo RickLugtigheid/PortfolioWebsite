@@ -32,11 +32,15 @@ footer {
     width: 100%;
 }
 
-.underline-hover:hover {
+.hover-underline:hover {
     text-decoration: underline;
 }
-.underline-hover {
+.hover-underline {
     text-decoration: none;
+}
+
+.hover-text-danger:hover {
+    color: rgba(var(--bs-danger-rgb),var(--bs-text-opacity))!important;
 }
 
 /* Cards */

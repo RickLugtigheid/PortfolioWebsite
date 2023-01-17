@@ -36,3 +36,12 @@ $("a[rel~='local']").click(function(e) {
         window.location.href = dest;
     }, 100);
 });
+/* Functions */
+function calculateAge(birthday) 
+{ 
+    // birthday is a date
+    var ageDifMs = Date.now() - birthday.getTime();
+    // miliseconds from epoch
+    var ageDate = new Date(ageDifMs);
+    return Math.abs(ageDate.getUTCFullYear() - 1970);
+}
